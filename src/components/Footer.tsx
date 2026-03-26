@@ -1,4 +1,5 @@
-import { FiLinkedin, FiInstagram, FiFacebook } from 'react-icons/fi';
+import { FiLinkedin, FiInstagram } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -28,14 +29,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services Links (Replaces Industries from mockup) */}
           <div className="lg:col-span-1">
             <h4 className="font-semibold text-lg mb-6">Services</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Web Development</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Mobile Applications</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">CCTV Operations</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">IT Consulting</a></li>
+              <li><Link to="/service" className="text-slate-400 hover:text-white transition-colors text-sm">Web Development</Link></li>
+              <li><Link to="/service" className="text-slate-400 hover:text-white transition-colors text-sm">Mobile Applications</Link></li>
+              <li><Link to="/service" className="text-slate-400 hover:text-white transition-colors text-sm">CCTV Operations</Link></li>
+              <li><Link to="/service" className="text-slate-400 hover:text-white transition-colors text-sm">IT Consulting</Link></li>
             </ul>
           </div>
 
