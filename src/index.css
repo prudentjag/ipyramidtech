@@ -2,16 +2,16 @@
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
-  
+
   --color-brand-50: #f0f7fa;
   --color-brand-100: #e0f0f5;
   --color-brand-400: #4bb3d8;
   --color-brand-800: #1d7b9c;
-  --color-brand-900: #2596be; /* Primary blue */
+  --color-brand-900: #2596be;
   --color-brand-950: #145a73;
-  
-  --color-accent: #fbbf24; /* Adjusted accent to yellow/gold for contrast */
-  
+
+  --color-accent: #fbbf24;
+
   --color-background: #f8fafc;
   --color-foreground: #0f172a;
 }
@@ -24,4 +24,8 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
 }
