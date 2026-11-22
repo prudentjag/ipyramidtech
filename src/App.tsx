@@ -3,6 +3,9 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
+import ProductsPage from './pages/ProductsPage';
+import About from './pages/About';
+
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="service" element={<Service />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="products" element={<ProductsPage />} />
+          <Route path="about" element={<About />} />
         </Route>
       </Routes>
     </Router>

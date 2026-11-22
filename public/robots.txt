@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ipyramidtech.com/sitemap.xml

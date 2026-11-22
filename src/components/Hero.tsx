@@ -1,5 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
 import { ArrowRight, BarChart3, TrendingUp, CheckCircle2, Play } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   const containerVariants: Variants = {
@@ -62,12 +63,12 @@ export default function Hero() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <button className="bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-4 rounded-full font-medium transition-all shadow-xl shadow-accent/20 flex items-center gap-2 w-full sm:w-auto justify-center">
+          <Link to  = '/products' className="bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-4 rounded-full font-medium transition-all shadow-xl shadow-accent/20 flex items-center gap-2 w-full sm:w-auto justify-center">
             Explore Products <ArrowRight size={18} />
-          </button>
-          <button className="bg-white border border-slate-200 hover:bg-slate-50 text-brand-900 px-8 py-4 rounded-full font-medium transition-all flex items-center gap-2 w-full sm:w-auto justify-center">
+          </Link >
+          <a href='#services' className="bg-white border border-slate-200 hover:bg-slate-50 text-brand-900 px-8 py-4 rounded-full font-medium transition-all flex items-center gap-2 w-full sm:w-auto justify-center">
             View Services
-          </button>
+          </a>
 
           <div className="flex items-center gap-3 ml-4">
             <div className="flex -space-x-3">
@@ -117,8 +118,10 @@ export default function Hero() {
           {/* Faint Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/sewing.jpg"
+              src="/sewing.webp"
               alt="A man is working on a sewing machine"
+              loading='lazy'
+              decoding='async'
               className="w-full h-full object-cover opacity-50 group-hover:opacity-30 transition-opacity duration-500"
             />
             {/* Gradient Overlay for Text Readability */}

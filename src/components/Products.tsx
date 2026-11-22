@@ -19,7 +19,7 @@ export default function Products() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-white overflow-hidden">
+    <section id='products' className="py-24 px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
@@ -145,9 +145,9 @@ export default function Products() {
           <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
             <strong>Feemap integrates directly with School Assistant.</strong> Students registered in our management system can pay fees through Feemap, and payments <span className="text-white under">automatically reflect</span> in the school's financial records in real-time.
           </p>
-          <button className="bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-4 rounded-full font-bold transition-all shadow-lg mx-auto">
-            See How It Works
-          </button>
+          <p className="text-accent font-semibold tracking-wide">
+  One Connected Ecosystem
+</p>
         </motion.div>
 
       </div>
