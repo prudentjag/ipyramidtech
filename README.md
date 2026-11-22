@@ -1,73 +1,131 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# iPyramidTech Website
 
-Currently, two official plugins are available:
+The official website of **iPyramidTech**, a technology company delivering innovative software development, digital solutions, and technology services for businesses and institutions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Our goal is to build reliable, scalable, and user-focused digital products that solve real-world problems.
 
-## React Compiler
+## About iPyramidTech
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+iPyramidTech provides technology solutions across different industries, helping businesses and institutions improve their operations through software and digital innovation.
 
-## Expanding the ESLint configuration
+Our services include:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Web Development
+- Mobile Application Development
+- Software Development
+- UI/UX Design
+- Technology Consulting
+- Digital Solutions
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Products
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Some of the products and platforms developed by iPyramidTech include:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **DirectTravel** – A travel and booking platform.
+- **Rentman** – A property management solution.
+- **School Assistant** – A school management and assistance platform.
+- **FeeMap** – A fee management platform currently in development.
+
+## Tech Stack
+
+This website is built using:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Framer Motion
+- Lucide React
+
+## Features
+
+- Responsive design for desktop, tablet, and mobile.
+- Modern user interface and animations.
+- Dedicated pages for services, products, about, and contact.
+- Client-side navigation with React Router.
+- Contact and business enquiry options.
+- SEO metadata and sitemap integration.
+- Optimized images and performance.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+- Node.js
+- pnpm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate into the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd ipyramidtech
 ```
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+### Run Development Server
+
+```bash
+pnpm dev
+```
+
+Open the local URL provided in your terminal.
+
+### Production Build
+
+```bash
+pnpm build
+```
+
+### Preview Production Build
+
+```bash
+pnpm preview
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── hooks/
+├── pages/
+├── App.tsx
+├── main.tsx
+└── index.css
+
+public/
+├── images/
+├── robots.txt
+└── sitemap.xml
+```
+
+## Live Website
+
+[https://www.ipyramidtech.com](https://www.ipyramidtech.com)
+
+## Deployment
+
+The website is deployed using Vercel.
+
+Updates pushed to the configured production branch are automatically deployed.
+
+## License
+
+This project is proprietary and maintained by iPyramidTech.

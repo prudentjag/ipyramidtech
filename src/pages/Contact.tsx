@@ -1,6 +1,7 @@
 import { MessageCircle, Mail, Phone, MapPin } from 'lucide-react';
 import { FaXTwitter } from "react-icons/fa6";
 
+
 export default function Contact() {
   return (
     <section id="contact" className="relative w-full py-20 bg-white overflow-hidden">

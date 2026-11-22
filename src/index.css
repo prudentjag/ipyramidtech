@@ -21,3 +21,7 @@
     @apply bg-background text-foreground antialiased selection:bg-brand-900 selection:text-white;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

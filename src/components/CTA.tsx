@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 export default function CTA() {
   return (
     <section className="relative w-full bg-brand-950 overflow-hidden py-32 px-6">
@@ -38,15 +38,19 @@ export default function CTA() {
           Accelerate your production with our technology. Reduce downtime and optimize costs. Get a special offer now!
         </motion.p>
         
-        <motion.button 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-3 rounded-full font-bold transition-colors shadow-lg shadow-black/20"
-        >
-          Work With Us
-        </motion.button>
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ delay: 0.2 }}
+>
+  <Link
+    to="/contact"
+    className="inline-block bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-3 rounded-full font-bold transition-colors shadow-lg shadow-black/20"
+  >
+    Work With Us
+  </Link>
+</motion.div>
       </div>
 
       {/* Top inline gradient mask to blend with whitespace above if necessary */}

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Database, Cloud, Shield, Activity, Users, Smartphone, Monitor, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Integrations() {
   const floatingIcons = [
@@ -30,9 +31,12 @@ export default function Integrations() {
           <p className="text-slate-500 text-lg leading-relaxed mb-8">
             Experience seamless connections with our innovative solutions, designed to effortlessly integrate with your existing systems, enhance productivity, and drive your business towards greater success.
           </p>
-          <button className="bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-3 rounded-full font-bold transition-colors shadow-sm">
-            Work With Us
-          </button>
+         <Link
+  to="/contact"
+  className="inline-flex items-center justify-center bg-accent hover:bg-yellow-400 text-brand-900 px-8 py-3 rounded-full font-bold transition-colors shadow-sm"
+>
+  Work With Us
+</Link>
         </motion.div>
 
         {/* Visual Content (Concentric Circles) */}
